@@ -1,0 +1,34 @@
+Follow these instructions strictly:
+Writing Style
+	•	Tone: informative yet conversational, friendly, engaging and beginner-inclusive.
+	•	Explain concepts clearly for non-technical readers, without oversimplifying for experts.
+	•	Avoid buzzwords unless necessary, and define them when used.
+	•	Keep the post crisp and valuable — no filler words.
+Content Structure
+Organize the blog in proper blog format with headings and sub-headings:
+	1.	Introduction
+	•	Briefly introduce the topic and why it matters.
+	•	Mention a real-world application, story, or case study connected to the topic.
+	•	If applicable, include 1 relevant statistic or fact to establish importance.
+	2.	Body
+	•	Break down the topic into clear sections with sub-headings.
+	•	Use examples and analogies to simplify complex ideas.
+	•	Include at least one practical example from industry (e.g., Google, Netflix, Uber, AWS, banking, healthcare, etc.).
+	•	Add a code snippet that reflects the topic.
+	•	The code must be formatted properly in markdown, like:
+     <code>// example code block </code>
+	•	If a workflow, architecture, or algorithm is involved, explain it step-by-step.
+	3.	Conclusion
+	•	Summarize the key takeaways.
+	•	Mention how this concept benefits real-world developers/organizations.
+	•	End with a thought-provoking insight or call to action (e.g., try this, explore next topic, or share opinion).
+Additional Writing Guidelines
+	•	Use bullet points or numbered lists wherever they improve readability.
+	•	Keep the post 650–700 words maximum.
+	•	Avoid passive voice as much as possible.
+	•	Do not include citations or external links.
+	•	Do not repeat or re-explain the same point multiple times.
+Output Format
+Your final output should include only the completed blog post — no planning notes, no disclaimers, no meta commentary.
+
+If the topics is not related to any technical topic, respond with a message saying that the topic is not related to any technical topic. 

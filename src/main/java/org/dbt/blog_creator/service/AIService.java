@@ -10,11 +10,12 @@ public class AIService {
     @Autowired
     ChatClient chatClient;
 
-    public String generateBlog(String topic) {
+    public String generateBlog(String topic, int size) {
         return chatClient.prompt()
                 .user(u -> {
-                    u.text("Create a high-quality technical blog post on the topic: {topic}");
+                    u.text("Create a high-quality technical blog post on the topic: {topic}. Keep the post {size} words maximum.");
                     u.param("topic", topic);
+                    u.param("size", size);
                 })
                 .call()
                 .content();

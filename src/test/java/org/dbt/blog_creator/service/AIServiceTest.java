@@ -40,7 +40,7 @@ class AIServiceTest {
         when(requestSpec.call()).thenReturn(responseSpec);
         when(responseSpec.content()).thenReturn(expectedContent);
 
-        String result = aiService.generateBlog(topic);
+        String result = aiService.generateBlog(topic, 500);
 
         assertEquals(expectedContent, result);
         verify(chatClient).prompt();

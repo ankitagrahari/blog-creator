@@ -20,10 +20,10 @@ public class BlogCreatorController {
     }
 
     @GetMapping("/create")
-    public String createBlog(@RequestParam("topic") String topic) {
+    public String createBlog(@RequestParam("topic") String topic, @RequestParam("size") int size) {
         if (topic == null || topic.trim().isEmpty()) {
             throw new IllegalArgumentException("Topic cannot be null or empty");
         }
-        return aiService.generateBlog(topic);
+        return aiService.generateBlog(topic, size);
     }
 }

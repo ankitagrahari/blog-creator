@@ -26,9 +26,9 @@ class BlogCreatorControllerTest {
         String topic = "Java";
         String expectedResponse = "Java Blog";
 
-        when(aiService.generateBlog(topic)).thenReturn(expectedResponse);
+        when(aiService.generateBlog(topic, 500)).thenReturn(expectedResponse);
 
-        mockMvc.perform(get("/blog-creator/create").param("topic", topic))
+        mockMvc.perform(get("/blog-creator/create").param("topic", topic).param("size", "500"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(expectedResponse));
     }
